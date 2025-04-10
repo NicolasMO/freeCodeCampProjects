@@ -1,0 +1,337 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#header {
+    background: linear-gradient(120deg,rgb(54, 48, 48), rgb(100,100,100));
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#header-info {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    font-size: 2rem;
+}
+
+#header-info span {
+    display: flex;
+    align-items: center;
+}
+
+span img {
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+}
+
+#top-section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#top-section h1 {
+    color: rgb(153, 35, 35);
+    font-size: 4rem;
+}
+
+#top-section p {
+    color:antiquewhite;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: -30px;
+}
+
+#mid-section {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(0deg,rgb(222, 146, 146), rgb(161, 91, 91));
+   
+}
+
+.mid-section-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-top: 3px solid rgb(47,42,42);
+    border-bottom: 3px solid rgb(47,42,42);
+    padding: 20px 0;
+}
+
+.mid-section-column h2 {
+    font-size: 1.7rem;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.mid-section-column:nth-of-type(1) li {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.mid-section-column:nth-of-type(1) li:not(:last-child) {
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.mid-section-column:nth-of-type(2) {
+    border-left: 3px solid rgb(47,42,42);
+    border-right: 3px solid rgb(47,42,42);
+}
+
+.work-info:nth-of-type(1) {
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(47,42,42);
+}
+
+.work-info {
+    padding: 0 20px;
+    font-size: 1.2rem;
+}
+
+.work-info span {
+    font-style: italic;
+}
+
+.work-info span,
+.work-info p,
+.work-info a {
+    margin: 0;
+    padding: 0;
+}
+
+.work-info a:not(:first-child) {
+    color: rgb(10, 91, 171);
+}
+
+#education-column {
+    font-size: 1.5rem;
+    padding-inline:20px;
+    margin-top: -25px;
+}
+
+.bottom-section {
+    background: linear-gradient(120deg,rgb(54, 48, 48), rgb(100,100,100));
+    height: 25vw;
+}
+
+.bottom-section h2 {
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 10%;
+    font-size: 2rem;
+    color:antiquewhite;
+}
+
+#teach-review-area {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 150px;
+    
+}
+
+.teacher-review {
+    margin: 30px 70px;
+    padding: 10px;
+    background-color: lavender;
+    width: 400px;
+    height: 250px;
+    border-radius: 30px;
+    border: 1px solid rgb(132, 122, 122);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.teacher-review p:nth-of-type(2) {
+    margin-top: 100px;
+    margin-bottom: -20px;
+}
+
+.teacher-review p:nth-of-type(2),
+.teacher-review p:nth-of-type(3) {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(40, 53, 53);
+}
+
+#contact {
+    background: rgb(100,100,100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:antiquewhite;
+}
+
+#contact h2 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+#contact p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+#contact a {
+    margin-right: 10px;
+    margin-left: -15px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    justify-content: space-between;
+}
+
+footer {
+    display: flex;
+    justify-content: end;
+    background: rgb(100,100,100);
+    color: white;
+    padding-right: 1%;
+}
+
+@media (max-width: 768px) {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    #header {
+        min-height: 300px;
+    }
+
+    #header-info {
+        flex-direction: column;
+        padding: 20px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #header-info a {
+        font-size: 1.2rem;
+    }
+
+    span img {
+        margin-right: 10px;
+        width: 40px; /* Reduz tamanho do ícone se quiser */
+    }
+
+    #top-section h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    #top-section p {
+        font-size: 1rem;
+        margin-top: -15px;
+        text-align: center;
+    }
+
+    #mid-section {
+        flex-direction: column;
+    }
+
+    .mid-section-column {
+        padding: 15px 0;
+        border-left: none !important;
+        border-right: none !important;
+    }
+
+    .mid-section-column h2 {
+        font-size: 1.4rem;
+        margin-left: 10px;
+    }
+
+    .mid-section-column:nth-of-type(1) li {
+        font-size: 1.2rem;
+        padding-left: 10px;
+    }
+
+    .work-info {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    #education-column {
+        font-size: 1.2rem;
+        padding-inline: 10px;
+        margin-top: -15px;
+    }
+
+    .bottom-section {
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .bottom-section h2 {
+        font-size: 1.5rem;
+        padding-left: 5%;
+    }
+
+    #teach-review-area {
+        flex-direction: column;
+        margin: 0 20px;
+        align-items: center;
+    }
+
+    .teacher-review {
+        width: 90%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    #contact form {
+        width: 90%;
+    }
+
+    #contact p {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer {
+        justify-content: center;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
