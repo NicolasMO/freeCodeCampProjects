@@ -1,5 +1,6 @@
 # [Personal Portfolio](https://roadmap.sh/projects/portfolio-website)
 
+This is not my real CV.
 This is a beginner-level front-end project for freeCodeCamp.  
 It uses semantic HTML and CSS (no JS).
 
