@@ -1,13 +1,13 @@
-# [Single Page CV](https://roadmap.sh/projects/basic-html-website)
+# [Personal Portfolio](https://roadmap.sh/projects/portfolio-website)
 
 This is a beginner-level front-end project for freeCodeCamp.  
-It uses semantic HTML only (no CSS or JS).
+It uses semantic HTML and CSS (no JS).
 
 ## ✅ Requirements Met
-- Semantically correct HTML structure
-- Multiple pages with a navigation bar
-- SEO meta tags in the head of each page
-- Contact page should have a form with fields like name, email, message etc
+- A fully styled, responsive website with the same structure as the (previous project)[https://github.com/NicolasMO/freeCodeCampProjects/tree/master/frontendProjects/beginner/Basic%20HTML%20Website]
+- Consistent use of a chosen color scheme and typography
+- Proper use of CSS techniques like Flexbox, media queries, and the box model
+- A responsive navigation bar and well-styled contact form
 
 ## 📥 How to Run
 Open `index.html` directly in a browser.
