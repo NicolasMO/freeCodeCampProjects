@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(149, 149, 149);
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.changelog {
+    margin: 100px auto;
+    background-color: white;
+    width: 40%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 3px solid rgb(48, 48, 48);
+    border-radius: 35px;
+}
+
+#changelog-header {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 50px;
+}
+
+#changelog-header h1{
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 2px;
+}
+
+#changelog-header p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: darkgrey;
+}
+
+#changelog-timeline {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 30% auto;
+    align-items: center;
+}
+
+.timeline-date {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: darkgrey;
+    text-align: right;
+}
+
+
+.timeline-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.timeline-content p {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 25px;
+    margin-right: 13px;
+}
+
+.timeline-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 33px; 
+    width: 3px;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.timeline-item:last-child .timeline-content::after {
+    display: none;
+}
+
+#changelog-button {
+    margin-top: 50px;
+    width: 300px;
+    height: 50px;
+    align-self: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
