@@ -5,9 +5,6 @@
 body {
     background-color: rgb(149, 149, 149);
     font-family: 'Roboto', 'sans-serif';
-}
-
-.changelog {
     margin: 100px auto;
     background-color: white;
     width: 40%;
@@ -111,4 +108,62 @@ body {
 a {
     text-decoration: none;
     color: white;
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 90%;
+        height: 100%;
+        margin: 50px auto;
+        font-size: 90%;
+        border-width: 2px;
+    }
+
+    #changelog-header h1 {
+        font-size: 2rem;
+    }
+
+    #changelog-header p {
+        font-size: 1rem;
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .timeline-date {
+        text-align: left;
+        font-size: 1rem;
+        padding-left: 10px;
+        margin-bottom: 5px;
+    }
+
+    .timeline-content {
+        padding: 10px 0;
+    }
+
+    .timeline-content p {
+        font-size: 1rem;
+    }
+
+    .dot {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .timeline-content::before {
+        display: none;
+    }
+
+    #changelog-button {
+        width: 90%;
+        font-size: 1rem;
+        height: 45px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
 }
