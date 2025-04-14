@@ -9,10 +9,5 @@ It uses semantic HTML only (no CSS or JS).
 - Favicon
 - Single-page layout
 
-
-## 🌐 Live Demo
-[See here](https://nicolasmo.github.io/freeCodeCampProjects/frontendProjects/beginner/Single-Page%20CV/)
-
-
 ## 📥 How to Run
 Open `index.html` directly in a browser.
