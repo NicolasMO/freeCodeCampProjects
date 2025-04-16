@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 2rem;
+    border: 3px solid black;
+    border-radius: 30px;
+    width: 40%;
+    height: 70vh;
+    margin: 100px auto;
+    display: flex;
+    padding: 100px;
+}
+
+input:focus, input:hover,
+button:focus, button:hover {
+    outline: 4px solid dodgerblue;
+}
+
+#form-register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#form-register input {
+    margin: 15px 0;
+    height: 60px;
+    font-size: 1.8rem;
+    padding-left: 15px;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+#form-register input:nth-of-type(2) {
+    color: firebrick;
+    border: 3px solid firebrick;
+}
+
+#form-register span {
+    font-size: 1.3rem;
+    color: firebrick;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.password-field {
+    width: 100%;
+    position: relative;
+}
+
+.password-field input {
+    margin-right: 40px;
+}
+
+.password-field button {
+    position: absolute;
+    top: 38%;
+    transform: translateY(-38%);
+    transform: scale(1.5);
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.password-field button:focus {
+    outline: 3px solid dodgerblue;
+}
+  
+#form-button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 1.8rem;
+    padding: 20px 0;
+    margin-top: 20px;;
+    border-radius: 20px;
+}
+
+.profile-completion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.profile-completeness {
+    border: 5px solid black;
+    width: 40%;
+    height: 30%;
+    border-radius: 50%;
+    position: relative;
+}
+
+.profile-completeness p {
+    position: absolute;
+    top: 5%;
+    left: 28%;
+}
+
+.profile-progression {
+    background-color: rgb(218, 218, 218);
+    border-radius: 30px;
+    font-size: 1.3rem;
+    height: 100%;
+    padding: 30px 40px;
+    letter-spacing: 2px;
+}
+
+.marked {
+    color: grey;
+    text-decoration: line-through;
+}
+
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
